@@ -7,6 +7,7 @@ The following endpoints are available:
 ## POST /lmppd/api/login
 ### USAGE:
 Login to retrieve token
+
 ### FORMAT: 
 json
 
@@ -16,10 +17,10 @@ json
 
 e.g.
 ```
-        {
+{
           "_id": "admin",
           "password": "admin"
-        }
+}
 ```
 
 ### EXAMPLE:
@@ -33,7 +34,7 @@ e.g.
 
 e.g.
 ```
-        {
+{
           "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IjYifQ.eyJpc3MiOiJsbXBwZCIsInN1YiI6Ii91c2VyL2FkbWluIiwic2NvcGUiOlsic2VsZiJdLCJleHAiOjE1MzUzMzYyNDMsImp0aSI6ImM1N2NmOThhLWU5NzMtNDQ0NC05MzE2LWFmOTkyYzNjNDY2ZSIsImlhdCI6MTUzNTMzMjY0M30.dojhqqDfem7M4MIlVKeuyKHckpJZODwgqbBW49LbuLQ",
           "user": {
             "type": "user",
@@ -68,12 +69,12 @@ e.g.
             "_id": "admin",
             "_rev": "1-f96e006b8b1e0ddd37e422aeed90a073"
           }
-        }        
+}        
 ```
 
 ## GET /lmppd/api/license
 ### USAGE:
-        Get license
+Get license
 
 ### FORMAT: 
 json
@@ -90,9 +91,9 @@ e.g.
 ```
 
 ### PARAMS:
-        json - String: query string in json format
+json - String: query string in json format
 
-        e.g.
+e.g.
 ```				
         https://limin.herokuapp.com/lmppd/api/license?json={"selector":{"key": "JLLU3NK9S3-EILZKJXZ7M-DTBEOMF815"}}
 ```
@@ -102,11 +103,11 @@ e.g.
         curl -X GET -H 'Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IjUifQ.eyJpc3MiOiJsbXBwZCIsInN1YiI6Ii91c2VyL2FkbWluIiwic2NvcGUiOlsic2VsZiJdLCJleHAiOjE1MzU5NTU1MjIsImp0aSI6IjExODUxNGVhLWVkZTYtNGMzOC04OWM5LTdhNWFhYzVlZTBjZCIsImlhdCI6MTUzNTk1MTkyMn0.zzJYp8cJEngGJwxT-aM3kYJU8wFKhzushnI7HTfpzPw' https://limin.herokuapp.com/lmppd/api/license?json=%7B%22selector%22%3A%7B%22key%22%3A+%22JLLU3NK9S3-EILZKJXZ7M-DTBEOMF815%22%7D%7D
 ```
 ### RETURNS:        
-        license object
+license object
         
-        e.g.
+e.g.
 ```
-        {
+{
           "product": {
             "_id": "8dfcacb0-a998-11e8-9c2a-dd04ca1cf0a0"
           },
@@ -128,33 +129,33 @@ e.g.
           "type": "license",
           "_id": "9fb14c40-a998-11e8-9c2a-dd04ca1cf0a0",
           "_rev": "1-39827a747666a85d1280a935915f7ae7"
-        }
-  ```
+}
+```
 	
 ## PUT /lmppd/api/license
 ### USAGE:
-        Update license
+Update license
 
 ###   FORMAT: 
 json
       
 ###  Header:        
-        authorization - String: token got from login api
+authorization - String: token got from login api
 
-        e.g.
+e.g.
 ```
-        {
+{
           "name": "authorization",
           "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IjEifQ.eyJpc3MiOiJsbXBwZCIsInN1YiI6Ii91c2VyL0pMQkxWVzgzTTciLCJzY29wZSI6WyJzZWxmIl0sImV4cCI6MTUzNTMzNzA2MiwianRpIjoiMGI4NWVlMjYtODkzMS00NTY2LWI2ODgtNGM0ZjQ5MDM0ODc0IiwiaWF0IjoxNTM1MzMzNDYyfQ.Gpq2zvi9nLJ61EM3RV22Evcr97RDuZ5eug1heaUmQaE"
-        }        
+}        
 ```
 ### PARAMS:
-*        binding.ip - String: IP address 
-  *      binding.deviceId - String: device id 
+* binding.ip - String: IP address 
+* binding.deviceId - String: device id 
 
-        e.g.
+e.g.
 ```
-        {
+{
           "product": {
             "_id": "8dfcacb0-a998-11e8-9c2a-dd04ca1cf0a0"
           },
@@ -180,9 +181,10 @@ json
           "_id": "9fb14c40-a998-11e8-9c2a-dd04ca1cf0a0",
           "_rev": "1-39827a747666a85d1280a935915f7ae7",
           "activatedTimestamp": 1535333515621
-        }
+}
 ```
+
 ### EXAMPLE:
 ```
-          curl -X POST -H 'Content-Type: application/json' -d '{...,"binding": { "ip": "192.168.3.1", "deviceId": "N1MBWY7JEC-8M614VA2-SCOPZR2M35"},...}' https://limin.herokuapp.com/lmppd/api/license
+curl -X POST -H 'Content-Type: application/json' -d '{...,"binding": { "ip": "192.168.3.1", "deviceId": "N1MBWY7JEC-8M614VA2-SCOPZR2M35"},...}' https://limin.herokuapp.com/lmppd/api/license
 ```
