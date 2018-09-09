@@ -186,5 +186,33 @@ e.g.
 
 ### EXAMPLE:
 ```
-curl -X POST -H 'Content-Type: application/json' -d '{...,"binding": { "ip": "192.168.3.1", "deviceId": "N1MBWY7JEC-8M614VA2-SCOPZR2M35"},...}' https://limin.herokuapp.com/lmppd/api/license
+curl -X POST -H 'Content-Type: application/json' -d '
+{
+          "product": {
+            "_id": "8dfcacb0-a998-11e8-9c2a-dd04ca1cf0a0"
+          },
+          "assignments": [
+            {
+              "organization": {
+                "_id": "97659460-a998-11e8-9c2a-dd04ca1cf0a0"
+              },
+              "validityTerm": 30,
+              "validityFrequency": 5,
+              "onlineTerm": 7
+            }
+          ],
+          "key": "JLBLUBK4A7-8F5JB188F3-7R125GEZFQ",
+          "timestamp": 1535333361412,
+          "deleted": false,
+          "status": "active",
+          "binding": {
+            "ip": "192.168.3.1",
+            "deviceId": "N1MBWY7JEC-8M614VA2-SCOPZR2M35"
+          },
+          "type": "license",
+          "_id": "9fb14c40-a998-11e8-9c2a-dd04ca1cf0a0",
+          "_rev": "1-39827a747666a85d1280a935915f7ae7",
+          "activatedTimestamp": 1535333515621
+}
+' https://limin.herokuapp.com/lmppd/api/license
 ```
