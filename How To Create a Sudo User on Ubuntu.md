@@ -12,10 +12,10 @@ adduser username
 ```
 ### Set and confirm the new user's password at the prompt. A strong password is highly recommended!
 
-> Set password prompts:
-> Enter new UNIX password:
-> Retype new UNIX password:
-passwd: password updated successfully
+    Set password prompts:
+		Enter new UNIX password:
+		Retype new UNIX password:
+		passwd: password updated successfully
 
 ### Follow the prompts to set the new user's information. It is fine to accept the defaults to leave all of this information blank.
 
