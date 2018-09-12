@@ -11,22 +11,22 @@ Be sure to replace username with the user that you want to create.
 adduser username
 ```
 ### Set and confirm the new user's password at the prompt. A strong password is highly recommended!
-
+    
     Set password prompts:
 		Enter new UNIX password:
 		Retype new UNIX password:
-		passwd: password updated successfully
+passwd: password updated successfully
 
 ### Follow the prompts to set the new user's information. It is fine to accept the defaults to leave all of this information blank.
-
-User information prompts:
-Changing the user information for username
-Enter the new value, or press ENTER for the default
-    Full Name []:
-    Room Number []:
-    Work Phone []:
-    Home Phone []:
-    Other []:
+    
+    User information prompts:
+		Changing the user information for username
+		Enter the new value, or press ENTER for the default
+		Full Name []:
+		Room Number []:
+		Work Phone []:
+		Home Phone []:
+		Other []:
 Is the information correct? [Y/n]
 
 ### Use the usermod command to add the user to the sudo group.
