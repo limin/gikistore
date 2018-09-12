@@ -18,11 +18,11 @@ The first thing you will want to do is use the pm2 start command to run your app
 This also adds your application to PM2's process list, which is outputted every time you start an application:
 
 Output:
-┌──────────┬────┬──────┬──────┬────────┬───────────┬────────┬────────────┬──────────┐
-│ App name │ id │ mode │ PID  │ status │ restarted │ uptime │     memory │ watching │
-├──────────┼────┼──────┼──────┼────────┼───────────┼────────┼────────────┼──────────┤
-│ hello    │ 0  │ fork │ 5871 │ online │         0 │ 0s     │ 9.012 MB   │ disabled │
-└──────────┴────┴──────┴──────┴────────┴───────────┴────────┴────────────┴──────────┘
+ââââââââââââ¬âââââ¬âââââââ¬âââââââ¬âââââââââ¬ââââââââââââ¬âââââââââ¬âââââââââââââ¬âââââââââââ
+â App name â id â mode â PID  â status â restarted â uptime â     memory â watching â
+ââââââââââââ¼âââââ¼âââââââ¼âââââââ¼âââââââââ¼ââââââââââââ¼âââââââââ¼âââââââââââââ¼âââââââââââ¤
+â hello    â 0  â fork â 5871 â online â         0 â 0s     â 9.012 MB   â disabled â
+ââââââââââââ´âââââ´âââââââ´âââââââ´âââââââââ´ââââââââââââ´âââââââââ´âââââââââââââ´âââââââââââ
 
 As you can see, PM2 automatically assigns an App name (based on the filename, without the .js extension) and a PM2 id. PM2 also maintains other information, such as the PID of the process, its current status, and memory usage.
 
@@ -71,3 +71,4 @@ Now that your Node.js application is running, and managed by PM2, let's set up t
 
 ## Reference
 [https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04)
+[https://geekflare.com/nginx-static-files-node-js/](https://geekflare.com/nginx-static-files-node-js/)
