@@ -1,0 +1,1 @@
+## [Tech Talks 上海站，敏捷开发与创新研发管理！](http://www.hdb.com/party/nt6v2.html)
