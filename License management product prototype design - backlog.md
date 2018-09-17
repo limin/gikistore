@@ -1,7 +1,7 @@
-[ ] Replace url fetch with [axios](https://github.com/axios/axios)
-[ ] RESTful API cache config. (public, private, max-age, s-maxage and so on)
-[ ] Nginx proxy nodejs request. (cors and websocket support are required)
-[ ] Use [Socket.io](https://socket.io/) to handle realtime data collection
-[ ] Use [Kafka](https://kafka.apache.org/) as message service
-[ ] Setup [Jenkins](https://jenkins.io/) for CI tool
-[ ] Setup Giki on the server for the project
+- [ ] Replace url fetch with [axios](https://github.com/axios/axios)
+- [ ] RESTful API cache config. (public, private, max-age, s-maxage and so on)
+- [ ] Nginx proxy nodejs request. (cors and websocket support are required)
+- [ ] Use [Socket.io](https://socket.io/) to handle realtime data collection
+- [ ] Use [Kafka](https://kafka.apache.org/) as message service
+- [ ] Setup [Jenkins](https://jenkins.io/) for CI tool
+- [ ] Setup Giki on the server for the project
