@@ -5,3 +5,4 @@
 - [ ] Use [Kafka](https://kafka.apache.org/) as message service
 - [ ] Setup [Jenkins](https://jenkins.io/) for CI tool
 - [ ] Setup Giki on the server for the project
+- [ ] Refresh web page return 404
