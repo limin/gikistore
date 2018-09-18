@@ -1,0 +1,3 @@
+- [ ] Allow refresh function (store credential in session storeage)
+- [ ] Support login with auth app
+- [ ] Move comment input into edit main page and replace markdown editor with plain text input
