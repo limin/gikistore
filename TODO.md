@@ -1,0 +1,2 @@
+- [ ] Calculate size of javascript object in bytes
+- [ ] Simple cache function with memory usage limitation in javascript
