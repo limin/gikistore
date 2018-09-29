@@ -222,12 +222,12 @@ curl -X POST -H 'Content-Type: application/json' -d '
 - Install <https://www.nuget.org/packages/SocketIoClientDotNet/>
 - Example code:
 ```c#
-						using Quobject.SocketIoClientDotNet.Client;
+using Quobject.SocketIoClientDotNet.Client;
 
-            var socket = IO.Socket("http://39.106.154.35:8080");
-            socket.On("send data", (event) =>
-            {
-                log.Info(event);
-                socket.Emit("send data",event);
-						});
+var socket = IO.Socket("http://39.106.154.35:8080");
+socket.On("send data", (event) =>
+{
+	log.Info(event);
+  socket.Emit("send data",event);
+});
 ```
